@@ -60,9 +60,9 @@ To override EEPROM settings with config settings, set EEPROM_MODE 0
 // Smart RAMPS for Due          = 408
 // Alligator Board rev1         = 500
 // Alligator Board rev2         = 501
-// Alligator Board rev2         = 503
+// Alligator Board rev3         = 502
 
-#define MOTHERBOARD 402
+#define MOTHERBOARD 502
 
 #include "pins.h"
 
