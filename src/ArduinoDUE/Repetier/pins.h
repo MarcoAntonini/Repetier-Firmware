@@ -781,7 +781,7 @@ STEPPER_CURRENT_CONTROL
 #define TEMP_1_PIN        5
 
 #define HEATER_2_PIN      8
-#define TEMP_2_PIN        5
+#define TEMP_2_PIN        4
 #define HEATER_3_PIN      9
 #define TEMP_3_PIN        3
 #define HEATER_4_PIN     97
