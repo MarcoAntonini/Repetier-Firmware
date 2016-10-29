@@ -1120,6 +1120,16 @@ void Printer::setup()
 #if USE_ADVANCE
     extruderStepsNeeded = 0;
 #endif
+#if (MOTHERBOARD==502)
+    //Init addictional pons for Alligator board
+    SET_INPUT(MOTOR_FAULT_PIN);
+    SET_INPUT(MOTOR_FAULT_PIGGY_PIN);
+    SET_INPUT(FTDI_COM_RESET_PIN);
+    SET_INPUT(ESP_WIFI_MODULE_RESET_PIN);
+    SET_OUTPUT(EXP1_OUT_ENABLE_PIN);
+    WRITE(EXP1_OUT_ENABLE_PIN,HIGH);
+    SET_OUTPUT(EXP1_VOLTAGE_SELECT);
+#endif// (MOTHERBOARD==502)
     EEPROM::initBaudrate();
     HAL::serialSetBaudrate(baudrate);
     Com::printFLN(Com::tStart);
